@@ -11,16 +11,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("noticias")
+@RequestMapping("n")
 public class NoticiaController {
 
     @Autowired
     private NoticiaRepository noticiaRepository;
 
-    @GetMapping("{caminho}")
-    public String noticiaViaCaminho(@PathVariable("caminho") String caminho, Model model) {
+    @GetMapping("{c}")
+    public String noticiaViaCaminho(@PathVariable("c") String caminho, Model model) {
         Noticia noticia = noticiaRepository.findByCaminho(caminho);
-        model.addAttribute("noticia", noticia);
-        return "Noticia/single";
+        if (noticia != null) {
+            model.addAttribute("noticia", noticia);
+            return "Noticia/single";
+        }
+        return "404";
     }
 }

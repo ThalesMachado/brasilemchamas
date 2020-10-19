@@ -17,6 +17,11 @@ public class NoticiaController {
     @Autowired
     private NoticiaRepository noticiaRepository;
 
+    @GetMapping("/")
+    public String index() {
+        return "Noticia/index";
+    }
+
     @GetMapping("{c}")
     public String noticiaViaCaminho(@PathVariable("c") String caminho, Model model) {
         Noticia noticia = noticiaRepository.findByCaminho(caminho);

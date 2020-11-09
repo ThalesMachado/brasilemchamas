@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -89,6 +90,12 @@
   margin-left: 30px;
 }
 
+.tabela {
+  overflow-y: auto;
+  width: 640px;
+  height: 550px;
+}
+
 body {
   display: flex;
   width: 66%;
@@ -105,6 +112,10 @@ body {
 }
 
 /* FOOTER */
+
+footer {
+  background-color: rgb(196, 186, 186);
+}
 
 .footer-geral {
   height: 75px;
@@ -210,6 +221,53 @@ body {
 #outras-noticias {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.fonte {
+  font-style: italic;
+  font-family: Russo One;
+  font-size: 4mm;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.footercustom {
+  font-family: Russo One;
+  font-size: 4mm;
+  color: black;
+  text-align: left;
+}
+
+.footersecssion {
+  font-style: normal;
+  font-family: Russo One;
+  font-size: 6mm;
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sinvineta {
+  list-style: none;
 }
 
 .grid-noticias {

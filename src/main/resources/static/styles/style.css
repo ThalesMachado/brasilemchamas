@@ -90,7 +90,7 @@
 }
 
 body {
-  display: flex;  
+  display: flex;
   width: 66%;
   margin: 0 auto 0 auto;
   flex-direction: column;
@@ -125,12 +125,18 @@ body {
   height: 30px;
 }
 
-#footer-links-uteis a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
+#footer-links-uteis {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#footer-links-uteis span {
   color: #fafafa;
+  font-weight: bold;
+}
+
+#footer-links-uteis a {
+  color: inherit;
 }
 
 /* Página de Notícias */
@@ -139,7 +145,7 @@ body {
   width: 100%;
 }
 
-#h1-noticias {
+.h1-principal {
   text-align: center;
   font-family: "Russo One";
   font-style: normal;
@@ -239,4 +245,84 @@ body {
   line-height: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+/* Áreas Protegidas */
+
+#mapa-brasil {
+  width: 100%;
+}
+
+#div-link-referencia {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#div-link-referencia p {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+/* Fale Conosco */
+
+#p-descricao-faleConosco {
+  font-family: "Roboto";
+  font-weight: lighter;
+  text-align: center;
+}
+
+#nome-email-faleConosco {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#esq-input-label-faleConosco {
+  float: left;
+  width: 50%;
+}
+
+#esq-input-label-faleConosco input {
+  width: 75%;
+}
+
+#dir-input-label-faleConosco {
+  float: right;
+  width: 50%;
+}
+
+#dir-input-label-faleConosco input {
+  width: 75%;
+}
+
+#formulario-fale-conosco {
+  width: 75%;
+  margin: 15px auto;
+}
+
+#formulario-fale-conosco label {
+  font-family: "Russo One";
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+#formulario-fale-conosco-textarea textarea {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+#submit-Contato {
+  width: 100%;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #0a0a0a;
+  color: #fafafa;
+}
+
+#submit-Contato:hover {
+  background-color: #fafafa;
+  color: #0a0a0a;
 }

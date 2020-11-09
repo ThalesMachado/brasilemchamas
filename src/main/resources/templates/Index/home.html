@@ -6,40 +6,7 @@
 
     <!-- HEADER -->
 
-    <header>
-        <nav class="navbar sticky-top navbar-expand-md">
-
-            <div class="navbar" id="navbar">
-                <ul class="navbar-nav mr-auto  pr-4">
-                    <li class="nav-item active pr-3">
-                        <img th:src="@{../imagens/logo.png}" href="#" alt="Brasil em Chamas">
-                    </li>
-
-                    <li class="nav-item active">
-                        <a class="nav-link mr-2  navitens" href="#">Página Inicial <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navitens" href="n">Notícias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  navitens" href="#">Evolução de Queimadas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navitens" href="#">Áreas Protegidas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navitens" href="#">Orientações</a>
-                    </li>
-                </ul>
-            </div>
-            <form class="form-inline pt-3">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </nav>
-    </header>
-
+    <header th:insert="~{fragments/header}" />
 
     <!-- CORPO HOMEPAGE -->
     <div class="px-5">
@@ -105,11 +72,6 @@
             <div class="row featurette">
                 <h2 class="featurette-heading titulo">Situação das Queimadas</h2>
             </div>
-
-
-
-
-
             <div class="col-md-5">
                 <div id="carouselNoticias" class="carousel slide carouselNoticias" data-ride="carousel">
                     <div class="carousel-inner">
@@ -137,6 +99,7 @@
         <script src="" async defer></script>
     </div>
     </div>
+    <footer class="footer-geral" th:insert="~{fragments/footer.html}" />
 </body>
 
 </html>

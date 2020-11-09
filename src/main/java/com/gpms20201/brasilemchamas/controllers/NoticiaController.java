@@ -5,6 +5,7 @@ import com.gpms20201.brasilemchamas.Repositories.NoticiaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -15,7 +16,8 @@ public class NoticiaController {
     private NoticiaRepository noticiaRepository;
 
     @RequestMapping(value = { "", "/index" })
-    public String indexNoticia() {
+    public String indexNoticia(Model modelo) {
+        modelo.addAttribute("titulo", "Notícias");
         return "Noticia/index";
     }
 }

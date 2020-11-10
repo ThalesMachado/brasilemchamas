@@ -98,7 +98,7 @@
 
 body {
   display: flex;
-  width: 66%;
+  width: 80%;
   margin: 0 auto 0 auto;
   flex-direction: column;
 }
@@ -409,7 +409,8 @@ footer {
 
 .imgpost {
   height: 500px;
-  width: 1200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 #formulario-fale-conosco {

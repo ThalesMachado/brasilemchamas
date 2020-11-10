@@ -33,7 +33,12 @@
     </section>
 
     <section id="outras-noticias" class="section-noticia grid-noticias">
-        <div class="item-noticia">
+        <div class="item-noticia" th:each="noticia : ${noticias}">
+            <img th:src="@{${noticia.URLImagem}}" alt="">
+            <span><a th:text="${noticia.titulo}" th:href="@{/n(caminho=${noticia.caminho})}"></a></span>
+            <p th:text="${noticia.corpo}" />
+        </div>
+        <!--div class="item-noticia">
             <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
             <span>Lorem Ipsum</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
@@ -63,16 +68,11 @@
             <span>Lorem Ipsum</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
         </div>
-        <div class="item-noticia">
+        <div-- class="item-noticia">
             <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
             <span>Lorem Ipsum</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
+        </div-->
     </section>
     <footer th:insert="~{fragments/footer.html}" />
     <script src="" async defer></script>

@@ -1,7 +1,5 @@
 package com.gpms20201.brasilemchamas.controllers;
 
-import java.util.Map;
-
 import javax.websocket.server.PathParam;
 
 import com.gpms20201.brasilemchamas.Entities.FaleConosco;
@@ -10,9 +8,7 @@ import com.gpms20201.brasilemchamas.Repositories.FaleConoscoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -30,9 +26,13 @@ public class FaleConoscoController {
             modelo.addAttribute("sucesso", true);
             modelo.addAttribute("titulo", "Fale Conosco");
             return "faleConosco/faleConosco.html";
-
         }
         modelo.addAttribute("titulo", "Fale Conosco");
         return "faleConosco/faleConosco.html";
+    }
+
+    @GetMapping("teste")
+    public FaleConosco teste() {
+        return faleConoscoRepository.findByEmail("a@a.com");
     }
 }

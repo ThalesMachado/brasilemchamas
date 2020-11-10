@@ -103,6 +103,12 @@ body {
   flex-direction: column;
 }
 
+.item-carrossel-homepage p {
+  height: 10%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /* Header */
 
 .header-principal {
@@ -303,6 +309,7 @@ footer {
   line-height: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
+  height: 15%;
 }
 
 /* Áreas Protegidas */

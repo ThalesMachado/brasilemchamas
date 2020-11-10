@@ -1,5 +1,7 @@
 package com.gpms20201.brasilemchamas.controllers;
 
+import java.util.List;
+
 import com.gpms20201.brasilemchamas.Entities.Noticia;
 import com.gpms20201.brasilemchamas.Repositories.NoticiaRepository;
 
@@ -17,6 +19,8 @@ public class IndexController {
 
     @RequestMapping("/")
     public String index(Model modelo) {
+        List<Noticia> noticiasPrincipais = noticiaRepository.findAll();
+        modelo.addAttribute("noticias", noticiasPrincipais);
         modelo.addAttribute("titulo", "Início");
         return "Index/home";
     }

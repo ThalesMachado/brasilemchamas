@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head th:insert="~{fragments/head.html}" />
+
+<body>
+
+    <header th:insert="~{fragments/header.html}" />
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <form action="cadastrar" method="get">
+
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo">
+        <label for="corpo">Corpo</label>
+        <input type="text" name="corpo">
+        <label for="urlImagem">URL da Imagem</label>
+        <input type="text" name="urlImagem">
+        <label for="caminho">Caminho da Noticia</label>
+        <input type="text" name="caminho">
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <script src="" async defer></script>
+    <footer th:insert="~{fragments/footer.html}" />
+</body>
+
+</html>

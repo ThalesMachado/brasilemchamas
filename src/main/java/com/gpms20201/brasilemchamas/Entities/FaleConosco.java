@@ -3,7 +3,7 @@ package com.gpms20201.brasilemchamas.Entities;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document("faleConosco")
 public class FaleConosco {
 
     public FaleConosco(String nome, String email, String mensagem) {

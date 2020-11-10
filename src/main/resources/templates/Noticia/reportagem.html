@@ -1,0 +1,145 @@
+<html>
+
+<head th:insert="~{fragments/head}" />
+
+<body class="colorpage">
+
+    <!-- HEADER -->
+
+    <header th:insert="~{fragments/header}" />
+
+
+    <!-- CORPO HOMEPAGE -->
+
+    <div class="container-fluid">
+        <br>
+        <hr class="featurette-divider divisoriaReta">
+        <br>
+        <div class="col-md-12 px-0 text-center">
+            <img th:src="@{${noticia.URLImagem}}" class="imgpost" alt="post">
+
+            <label class="frasepost1" th:text="${noticia.titulo}" />
+        </div>
+
+        <div class="px-5">
+            <hr class="featurette-divider divisoriaReta">
+            <br>
+            <br>
+
+            <div class="container-fluid">
+                <div class="col-md-12 artigo mb-4">
+                    <p class="pb-2  tituloTexto " th:text="${noticia.titulo}" />
+                    <p class="inf text-muted border-bottom">11 Janeiro de 2020, por Nome do Autor.</p>
+                </div>
+                <center>
+                    <div class="textoartigo col-md-10">
+                        <p th:text="${noticia.corpo}" />
+                    </div>
+                </center>
+            </div>
+
+
+            <hr class="featurette-divider divisoriaReta">
+            <br>
+
+            <div class="row featurette pt-2">
+                <h2 class="featurette-heading subtitulo">Textos Similares</h2>
+            </div>
+            <br>
+
+            <div class="row mb-2">
+                <div class="col-md-6 zoom">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250" src="../../../imagens/texto1.png"
+                                href="#" alt="texto1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 zoom">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Post title</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                                additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250" src="../../../imagens/texto2.png"
+                                href="#" alt="texto2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <footer style="background-color:rgb(196, 186, 186)">
+                <div class="col-md-12 footercustom">
+                    <div class="row">
+                        <div class="col-md-4 pt-4">
+                            <p class="footersecssion">Mapa do Site</p>
+                            <ul class="sinvineta">
+                                <li class="pt-3">Inicio</li>
+                                <li class="pt-3">Notícias</li>
+                                <li></li>
+                                <li class="pt-3">Situação das Queimadas</li>
+                                <li class="pt-3">Contatos</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 pt-4">
+                            <p class="footersecssion">Nossos Canais</p>
+                            <ul class="sinvineta">
+                                <li><img src="../../../imagens/insta.png" style="width: 35px;"> @BRchamas</li>
+                                <li><img src="../../../imagens/face.png" style="width: 35px;">\bremchamas</li>
+                                <li><img src="../../../imagens/email.png" style="width: 35px;">brchamas@gmail.com</li>
+                                <li><img src="../../../imagens/yt.png" style="width: 35px;">BR Chamas</li>
+                                <li><img src="../../../imagens/pinterest.png" style="width: 35px;">@brchamas</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 pt-4">
+                            <p class="float">
+                                <a class="footersecssion" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                        class="bi bi-caret-up-fill" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                    </svg>Back to top</a>
+                            </p>
+                        </div>
+
+                        <div class="container-fluid" style="background-color:rgb(18, 133, 37);">
+                            <p class="text-center pt-2">
+                                Brasil em chamas. Uma realidade que necessita mudar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="" async defer></script>
+</body>
+
+</html>

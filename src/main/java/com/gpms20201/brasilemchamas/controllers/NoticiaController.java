@@ -21,11 +21,19 @@ public class NoticiaController {
     private NoticiaRepository noticiaRepository;
 
     @RequestMapping(value = { "", "/index" })
-    public String indexNoticia(Model modelo) {
-        List<Noticia> noticiasPrincipais = noticiaRepository.findAll();
-        modelo.addAttribute("titulo", "Notícias");
-        modelo.addAttribute("noticias", noticiasPrincipais);
-        return "Noticia/index";
+    public String indexNoticia(Model modelo, @PathParam("caminho") String caminho) {
+        if (caminho != null) {
+            Noticia noticia = noticiaRepository.findByCaminho(caminho);
+            modelo.addAttribute("titulo", noticia.getTitulo());
+            modelo.addAttribute("noticia", noticia);
+            return "Noticia/reportagem.html";
+        } else {
+            List<Noticia> noticias = noticiaRepository.findAll();
+            modelo.addAttribute("noticiaPrincipal", noticias.get(0));
+            modelo.addAttribute("noticias", noticias);
+            modelo.addAttribute("titulo", "Notícias");
+            return "Noticia/index.html";
+        }
     }
 
     @GetMapping("cadastrar")

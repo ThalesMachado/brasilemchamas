@@ -20,9 +20,11 @@ public class FaleConoscoController {
 
     @RequestMapping("")
     public String faleConosco(Model modelo, @PathParam("nome") String nome, @PathParam("email") String email,
-            @PathParam("mensagem") String mensagem) {
+            @PathParam("mensagem") String mensagem, @PathParam("tipoMensagem") String tipoMensagem,
+            @PathParam("celular") String celular) {
         if (nome != null && email != null && mensagem != null) {
-            FaleConosco faleConosco = faleConoscoRepository.save(new FaleConosco(nome, email, mensagem));
+            FaleConosco faleConosco = faleConoscoRepository
+                    .save(new FaleConosco(nome, email, mensagem, tipoMensagem, celular));
             modelo.addAttribute("sucesso", true);
             modelo.addAttribute("titulo", "Fale Conosco");
             return "faleConosco/faleConosco.html";

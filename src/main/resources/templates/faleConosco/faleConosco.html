@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head th:insert="~{fragments/head}" />
+
+<body>
+    <header th:insert="~{fragments/header}" />
+
+    <section>
+        <h1 class="h1-principal">Fale Conosco</h1>
+        <div id="formulario-fale-conosco">
+            <p id="p-descricao-faleConosco">Tire suas dúvidas, faça questionamentos e entenda melhor sobre a situação
+                das
+                queimadas no Brasil.</p>
+            <p th:if="${sucesso}">Registrado com Sucesso!</p>
+            <form action="fc" method="get">
+                <div id="nome-email-faleConosco">
+                    <div id="esq-input-label-faleConosco">
+                        <label for="nome">nome: </label>
+                        <input type="text" name="nome" placeholder="Escreva seu nome." required>
+                    </div>
+                    <div id="dir-input-label-faleConosco">
+                        <label for="email">e-mail:</label>
+                        <input type="email" name="email" placeholder="Digite seu e-mail." required>
+                    </div>
+                </div>
+                <div id="formulario-fale-conosco-textarea">
+                    <label for="mensagem">mensagem:</label>
+                    <br>
+                    <textarea name="mensagem" placeholder="Escreva sua dúvida..." required></textarea>
+                </div>
+
+                <div>
+                    <input id="submit-Contato" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <footer th:insert="~{fragments/footer.html}" />
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.colorpage {
+  background-color: #fafafa;
+}
+
+.navitens {
+  font-style: inherit;
+  font-family: Russo One;
+  text-decoration: underline;
+  font-size: 4.5mm;
+  color: black;
+  padding-top: 8mm;
+  padding-right: 6mm;
+}
+
+.posicao {
+  padding-bottom: 5px;
+  padding-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.divisoriaReta {
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.imagManchete {
+  width: 360;
+  height: 200;
+}
+.titulo {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 9mm;
+  color: black;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.subtitulo {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 7mm;
+  color: black;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+.infExtra {
+  font-style: italic;
+  font-family: Russo One;
+  font-size: 4.5mm;
+  color: rgba(110, 110, 110, 0.767);
+  margin-left: 30px;
+}
+.corpoTexto {
+  font-style: normal;
+  font-family: Russo One;
+  font-size: 5mm;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.links {
+  font-style: inherit;
+  font-family: Russo One;
+  text-decoration: underline;
+  font-size: 4.5mm;
+  color: black;
+  padding-top: 8mm;
+  margin-left: 30px;
+}
+
+.tabela {
+  overflow-y: auto;
+  width: 640px;
+  height: 550px;
+}
+
+body {
+  display: flex;
+  width: 66%;
+  margin: 0 auto 0 auto;
+  flex-direction: column;
+}
+
+/* Header */
+
+.header-principal {
+}
+
+.menu-principal {
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(196, 186, 186);
+}
+
+.footer-geral {
+  height: 75px;
+  background-color: #0a0a0a;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+#footer-links {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-rede-social {
+  width: 30px;
+  height: 30px;
+}
+
+#footer-links-uteis {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#footer-links-uteis span {
+  color: #fafafa;
+  font-weight: bold;
+}
+
+#footer-links-uteis a {
+  color: inherit;
+}
+
+/* Página de Notícias */
+.noticia-principal {
+  height: 300px;
+  width: 100%;
+}
+
+.h1-principal {
+  text-align: center;
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: normal;
+  margin: 2% auto;
+  font-size: 4em;
+}
+
+#noticia-principal {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+#noticia-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+#caixa-cinza-noticia-princial {
+  padding: 1%;
+  width: 25%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #d0d0d0;
+  opacity: 0.5;
+}
+
+#caixa-cinza-noticia-princial h3 {
+  font-family: "Roboto Condensed";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#caixa-cinza-noticia-princial p {
+  font-family: "Roboto";
+  height: 60%;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+#caixa-cinza-noticia-princial a {
+  font-family: "Roboto";
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  height: 60%;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #0a0a0a;
+}
+
+.section-noticia {
+  margin-bottom: 5%;
+}
+
+#outras-noticias {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.fonte {
+  font-style: italic;
+  font-family: Russo One;
+  font-size: 4mm;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.footercustom {
+  font-family: Russo One;
+  font-size: 4mm;
+  color: black;
+  text-align: left;
+}
+
+.footersecssion {
+  font-style: normal;
+  font-family: Russo One;
+  font-size: 6mm;
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sinvineta {
+  list-style: none;
+}
+
+.grid-noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.item-noticia {
+  /*background-color: tomato;*/
+  height: 220px;
+  padding: 10px;
+}
+
+.item-noticia img {
+  height: 75%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item-noticia span {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.item-noticia p {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* Áreas Protegidas */
+
+#mapa-brasil {
+  width: 100%;
+}
+
+#div-link-referencia {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#div-link-referencia p {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+/* Fale Conosco */
+
+#p-descricao-faleConosco {
+  font-family: "Roboto";
+  font-weight: lighter;
+  text-align: center;
+}
+
+#nome-email-faleConosco {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#esq-input-label-faleConosco {
+  float: left;
+  width: 50%;
+}
+
+#esq-input-label-faleConosco input {
+  width: 75%;
+}
+
+.tituloTexto {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 12mm;
+  color: black;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+#dir-input-label-faleConosco {
+  float: right;
+  width: 50%;
+}
+
+#dir-input-label-faleConosco input {
+  width: 75%;
+}
+
+.inf {
+  font-style: italic;
+  font-family: Palatino Linotype;
+  font-size: 4mm;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.textoartigo {
+  font-style: normal;
+  font-family: Palatino Linotype;
+  font-size: 5mm;
+  color: black;
+  padding-bottom: 10px;
+  margin-left: 30px;
+  justify-content: left;
+}
+
+.frasepost1 {
+  position: absolute;
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 29px;
+  color: white;
+  left: 285px;
+  top: 135px;
+}
+
+.frasepost2 {
+  position: absolute;
+  justify-content: left;
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 27px;
+  color: white;
+  left: 280px;
+  top: 180px;
+}
+
+.imgpost {
+  height: 500px;
+  width: 1200px;
+}
+
+#formulario-fale-conosco {
+  width: 75%;
+  margin: 15px auto;
+}
+
+#formulario-fale-conosco label {
+  font-family: "Russo One";
+  font-size: 30px;
+  font-weight: bold;
+  color: #0a0a0a;
+}
+
+#formulario-fale-conosco-textarea textarea {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+#submit-Contato {
+  width: 100%;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #0a0a0a;
+  color: #fafafa;
+}
+
+#submit-Contato:hover {
+  background-color: #fafafa;
+  color: #0a0a0a;
+}

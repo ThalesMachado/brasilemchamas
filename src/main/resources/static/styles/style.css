@@ -346,7 +346,8 @@ footer {
   width: 50%;
 }
 
-#esq-input-label-faleConosco input {
+#esq-input-label-faleConosco input,
+select {
   width: 75%;
 }
 

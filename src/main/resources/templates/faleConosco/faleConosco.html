@@ -27,6 +27,20 @@
                         <label for="email">e-mail:</label>
                         <input type="email" name="email" placeholder="Digite seu e-mail." required>
                     </div>
+                    <div id="esq-input-label-faleConosco">
+                        <label for="tipoMensagem">tipo:</label>
+                        <select name="tipoMensagem" id="" required>
+                            <option value=""></option>
+                            <option value="pergunta">Pergunta</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="denuncia">Denúncia</option>
+                        </select>
+                    </div>
+                    <div id="dir-input-label-faleConosco">
+                        <label for="celular">celular:</label>
+                        <input type="text" name="celular" placeholder="Digite número."
+                            onfocus="verificaCamposPreenchidos()" required>
+                    </div>
                 </div>
                 <div id="formulario-fale-conosco-textarea">
                     <label for="mensagem">mensagem:</label>

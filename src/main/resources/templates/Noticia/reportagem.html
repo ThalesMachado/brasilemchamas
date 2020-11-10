@@ -1,198 +1,145 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title class="titulo">br em chamas</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="../../../imagens/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../../../imagens/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../../../imagens/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../../../imagens/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../../../imagens/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../../../imagens/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../../../imagens/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../../../imagens/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../../../imagens/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="../../../imagens/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../../../imagens/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="../../../imagens/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../../../imagens/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
-         <!-- Bootstrap core CSS -->
-        <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link href="../../styles/style.css" rel="stylesheet">
-    </head>
 
-    <body class="colorpage"> 
+<head th:insert="~{fragments/head}" />
 
-<!-- HEADER -->
-   
-        <header>
-            <nav class="navbar sticky-top navbar-expand-md">
-                
-                <div class="navbar" id="navbar">
-                    <ul class="navbar-nav mr-auto  pr-4">
-                        <li class="nav-item active pr-3">
-                            <img src="../../../imagens/logo.png" href="#" alt="Brasil em Chamas">
-                        </li>
+<body class="colorpage">
 
-                        <li class="nav-item active">
-                            <a class="nav-link mr-2  navitens" href="#">Página Inicial <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navitens" href="#">Notícias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  navitens" href="#">Evolução de Queimadas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navitens" href="#">Áreas Protegidas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navitens" href="#">Orientações</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <form class="form-inline pt-3">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </nav>
-        </header>
+    <!-- HEADER -->
+
+    <header th:insert="~{fragments/header}" />
 
 
-        <!-- CORPO HOMEPAGE -->
-        
-            <div class="container-fluid">
-                <div class="col-md-12 px-0 text-center">
-                    <img src="../../../imagens/post1.jpg" class="imgpost" alt="post">
-                    
-                    <label class="frasepost1">Brasil em chamas</label>
-                    <label class="frasepost2">Triste realidade que necessita ser mudada.</label>
-                </div>
-                
-            <div class="px-5">
-                <hr class="featurette-divider divisoriaReta">
-                <br>
-                <br>
+    <!-- CORPO HOMEPAGE -->
 
-                <div class="container-fluid">
-                    <div class="col-md-12 artigo mb-4">
-                        <p class="pb-2  tituloTexto ">Títilo da Notícia</p>
-                        <p class="inf text-muted border-bottom">11 Janeiro de 2020, por Nome do Autor.</p>
-                    </div>
-                    <center>
-                        <div class="textoartigo col-md-10">
-                            <p>
-                                Inceptos eu conubia duis ultrices justo etiam vel senectus aenean posuere, fringilla eu condimentum vestibulum condimentum mollis nulla est tincidunt pellentesque, mattis aenean sit curabitur velit tellus accumsan vulputate ullamcorper. habitasse semper taciti amet venenatis vel lobortis litora, tincidunt arcu viverra nunc lacus nibh potenti hac, commodo ultricies interdum tristique mattis neque. malesuada primis leo netus donec nunc mattis metus senectus semper, lorem placerat diam suscipit aliquet dapibus porttitor ut praesent, nam posuere etiam orci per auctor venenatis magna. primis vel dui hendrerit ad curae imperdiet vivamus euismod odio purus, aliquet duis proin eros tincidunt consequat nisl elit tellus, sapien curabitur nostra ullamcorper adipiscing a inceptos pharetra ornare. 
+    <div class="container-fluid">
+        <br>
+        <hr class="featurette-divider divisoriaReta">
+        <br>
+        <div class="col-md-12 px-0 text-center">
+            <img th:src="@{${noticia.URLImagem}}" class="imgpost" alt="post">
 
-                                Rutrum vestibulum ut hac diam tristique commodo dictum porta, ligula vivamus vulputate ac praesent leo vehicula, feugiat neque elit vel urna gravida quisque. class phasellus eu morbi in class nostra rhoncus feugiat, ut nisi hac fringilla sapien est vehicula magna, iaculis risus nam orci torquent eget eu. in risus aenean tempor augue hendrerit erat magna dictumst, porttitor nullam posuere primis orci et sollicitudin, odio lacinia cubilia viverra arcu amet commodo. dolor nibh nostra porta turpis per sodales ut interdum, elementum aliquet magna quisque vel dictumst cubilia, nisi fermentum lacinia imperdiet vitae venenatis tempor. 
-                            
-                                Tincidunt curabitur integer quisque tortor nec justo vehicula congue dolor donec aptent maecenas class vitae porttitor, tortor enim luctus sem molestie vel suspendisse accumsan porttitor consectetur mollis semper lorem. litora orci sodales fermentum donec phasellus lobortis consectetur fusce scelerisque porta auctor odio rutrum erat, a elit elementum quam vehicula ut nunc feugiat class nulla aenean inceptos. nostra dapibus primis neque lorem nibh cras class vel est sem pellentesque, platea nisi egestas sagittis litora consectetur convallis luctus interdum malesuada dictumst, nisl odio sodales leo feugiat porta blandit id rutrum primis. turpis tellus euismod orci velit donec, euismod aptent quis torquent sodales, risus purus nunc augue. 
-                            
-                                Feugiat praesent nec nulla odio consectetur faucibus cubilia mauris mattis sed, purus vivamus ad habitasse luctus tortor ante vestibulum inceptos, accumsan mattis blandit eu senectus ante dolor lectus lobortis. a venenatis accumsan ante aenean velit tincidunt semper lectus condimentum, aliquam porta nullam tempus in vel viverra ligula, phasellus tempor aenean turpis cras duis odio non. donec sed conubia commodo egestas proin accumsan quis facilisis fermentum cras enim morbi elit, tempor taciti non dui vivamus scelerisque elementum accumsan sagittis proin diam imperdiet. donec egestas nunc dolor sit conubia phasellus etiam volutpat diam, ligula bibendum inceptos senectus fusce amet inceptos placerat per class, a pharetra dapibus quis nostra tempor turpis primis. 
-                            
-                                Suscipit pharetra sed ante donec vivamus duis torquent rhoncus felis, eros tristique placerat curabitur etiam litora cursus justo. nunc mauris ut suspendisse nisi felis mattis inceptos, massa sociosqu vel himenaeos ipsum justo tellus class, quisque etiam curae aenean duis primis. ultricies venenatis morbi per tempus hac praesent lacinia, donec ultricies luctus venenatis aenean aliquet fusce luctus, eu cubilia pulvinar mollis nisl sit. euismod interdum sapien imperdiet dui aenean platea in fringilla, enim morbi convallis suscipit mollis porttitor eros sit, auctor quisque taciti etiam quisque et praesent. 
-                            </p>       
-                        </div> 
-                    </center>
-                </div>
-                
-
-                <hr class="featurette-divider divisoriaReta">
-                <br>
-                
-                <div class="row featurette pt-2">
-                    <h2 class="featurette-heading subtitulo">Textos Similares</h2>
-                </div> 
-                <br>
-
-                <div class="row mb-2">
-                    <div class="col-md-6 zoom">
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <h3 class="mb-0">Featured post</h3>
-                                <div class="mb-1 text-muted">Nov 12</div>
-                                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="stretched-link">Continue reading</a>
-                            </div>
-                            <div class="col-auto d-none d-lg-block">
-                                <img class="bd-placeholder-img" width="200" height="250" src="../../../imagens/texto1.png" href="#" alt="texto1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 zoom">
-                        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <h3 class="mb-0">Post title</h3>
-                                <div class="mb-1 text-muted">Nov 11</div>
-                                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="stretched-link">Continue reading</a>
-                            </div>
-                            <div class="col-auto d-none d-lg-block">
-                                <img class="bd-placeholder-img" width="200" height="250" src="../../../imagens/texto2.png" href="#" alt="texto2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <!-- CONTATO -->
-                          
-                <footer style="background-color:rgb(196, 186, 186)">
-                    <div class="col-md-12 footercustom">
-                        <div class="row">
-                            <div class="col-md-4 pt-4">
-                                <p class="footersecssion">Mapa do Site</p>
-                                <ul class="sinvineta">
-                                    <li class="pt-3">Inicio</li>
-                                    <li class="pt-3">Notícias</li>
-                                    <li></li>
-                                    <li class="pt-3">Situação das Queimadas</li>
-                                    <li class="pt-3">Contatos</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 pt-4">
-                                <p class="footersecssion">Nossos Canais</p>
-                                <ul class="sinvineta">
-                                    <li><img src="../../../imagens/insta.png" style="width: 35px;"> @BRchamas</li>
-                                    <li><img src="../../../imagens/face.png" style="width: 35px;">\bremchamas</li>
-                                    <li><img src="../../../imagens/email.png" style="width: 35px;">brchamas@gmail.com</li>
-                                    <li><img src="../../../imagens/yt.png" style="width: 35px;">BR Chamas</li>
-                                    <li><img src="../../../imagens/pinterest.png" style="width: 35px;">@brchamas</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 pt-4">
-                                <p class="float">
-                                    <a class="footersecssion" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-up-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-                                      </svg>Back to top</a>
-                                </p>
-                            </div>
-                                
-                            <div class="container-fluid" style="background-color:rgb(18, 133, 37);">
-                                <p class="text-center pt-2">
-                                    Brasil em chamas. Uma realidade que necessita mudar.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>                    
-            </div>
+            <label class="frasepost1" th:text="${noticia.titulo}" />
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="" async defer></script>
-    </body>
+
+        <div class="px-5">
+            <hr class="featurette-divider divisoriaReta">
+            <br>
+            <br>
+
+            <div class="container-fluid">
+                <div class="col-md-12 artigo mb-4">
+                    <p class="pb-2  tituloTexto " th:text="${noticia.titulo}" />
+                    <p class="inf text-muted border-bottom">11 Janeiro de 2020, por Nome do Autor.</p>
+                </div>
+                <center>
+                    <div class="textoartigo col-md-10">
+                        <p th:text="${noticia.corpo}" />
+                    </div>
+                </center>
+            </div>
+
+
+            <hr class="featurette-divider divisoriaReta">
+            <br>
+
+            <div class="row featurette pt-2">
+                <h2 class="featurette-heading subtitulo">Textos Similares</h2>
+            </div>
+            <br>
+
+            <div class="row mb-2">
+                <div class="col-md-6 zoom">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Featured post</h3>
+                            <div class="mb-1 text-muted">Nov 12</div>
+                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                                lead-in to additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250" src="../../../imagens/texto1.png"
+                                href="#" alt="texto1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 zoom">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0">Post title</h3>
+                            <div class="mb-1 text-muted">Nov 11</div>
+                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                                additional content.</p>
+                            <a href="#" class="stretched-link">Continue reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250" src="../../../imagens/texto2.png"
+                                href="#" alt="texto2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONTATO -->
+
+            <footer style="background-color:rgb(196, 186, 186)">
+                <div class="col-md-12 footercustom">
+                    <div class="row">
+                        <div class="col-md-4 pt-4">
+                            <p class="footersecssion">Mapa do Site</p>
+                            <ul class="sinvineta">
+                                <li class="pt-3">Inicio</li>
+                                <li class="pt-3">Notícias</li>
+                                <li></li>
+                                <li class="pt-3">Situação das Queimadas</li>
+                                <li class="pt-3">Contatos</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 pt-4">
+                            <p class="footersecssion">Nossos Canais</p>
+                            <ul class="sinvineta">
+                                <li><img src="../../../imagens/insta.png" style="width: 35px;"> @BRchamas</li>
+                                <li><img src="../../../imagens/face.png" style="width: 35px;">\bremchamas</li>
+                                <li><img src="../../../imagens/email.png" style="width: 35px;">brchamas@gmail.com</li>
+                                <li><img src="../../../imagens/yt.png" style="width: 35px;">BR Chamas</li>
+                                <li><img src="../../../imagens/pinterest.png" style="width: 35px;">@brchamas</li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 pt-4">
+                            <p class="float">
+                                <a class="footersecssion" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                        class="bi bi-caret-up-fill" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                    </svg>Back to top</a>
+                            </p>
+                        </div>
+
+                        <div class="container-fluid" style="background-color:rgb(18, 133, 37);">
+                            <p class="text-center pt-2">
+                                Brasil em chamas. Uma realidade que necessita mudar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="" async defer></script>
+</body>
+
 </html>
-            
-                

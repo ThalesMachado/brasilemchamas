@@ -1,5 +1,7 @@
 package com.gpms20201.brasilemchamas.controllers;
 
+import java.util.List;
+
 import javax.websocket.server.PathParam;
 
 import com.gpms20201.brasilemchamas.Entities.Noticia;
@@ -26,6 +28,9 @@ public class NoticiaController {
             modelo.addAttribute("noticia", noticia);
             return "Noticia/reportagem.html";
         } else {
+            List<Noticia> noticias = noticiaRepository.findAll();
+            modelo.addAttribute("noticiaPrincipal", noticias.get(0));
+            modelo.addAttribute("noticias", noticias);
             modelo.addAttribute("titulo", "Notícias");
             return "Noticia/index.html";
         }

@@ -17,17 +17,11 @@
 
     <section class="noticia-principal section-noticia">
         <div id="noticia-principal">
-            <img src="https://pensamentoverde.com.br/wp-content/uploads/2017/12/ano-quebra-recorde-da-historia-do-brasil-no-registro-de-incendios.jpg"
-                alt="">
+            <img th:src="@{${noticiaPrincipal.URLImagem}}" alt="">
             <div id="caixa-cinza-noticia-princial">
-                <h3>Texto da Notícia</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <span><a href="#">Ler mais</a></span>
+                <h3 th:text="${noticiaPrincipal.titulo}" />
+                <p th:text="${noticiaPrincipal.corpo}" />
+                <span><a th:href="@{/n(caminho=${noticiaPrincipal.caminho})}">Ler mais</a></span>
             </div>
         </div>
     </section>
@@ -38,41 +32,6 @@
             <span><a th:text="${noticia.titulo}" th:href="@{/n(caminho=${noticia.caminho})}"></a></span>
             <p th:text="${noticia.corpo}" />
         </div>
-        <!--div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div>
-        <div-- class="item-noticia">
-            <img src="https://img.estadao.com.br/fotos/crop/1200x900/resources/jpg/6/8/1567432414586.jpg" alt="">
-            <span>Lorem Ipsum</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique sagittis pulvinar ut.</p>
-        </div-->
     </section>
     <footer th:insert="~{fragments/footer.html}" />
     <script src="" async defer></script>

@@ -13,7 +13,7 @@ public class MapaQueimadasController {
 
         modelo.addAttribute("titulo", "Mapa das Queimadas");
 
-        return "MapaQueimadas/mapa.html";
+        return "mapaQueimadas/mapa.html";
     }
 
 }

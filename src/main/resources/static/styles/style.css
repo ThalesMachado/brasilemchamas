@@ -446,3 +446,38 @@ select {
   background-color: #fafafa;
   color: #0a0a0a;
 }
+
+/* Mapa */
+
+#container {
+  height: 500px;
+  min-width: 310px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+#botao-aplicar-filtros {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 200px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #0a0a0a;
+  color: #fafafa;
+}
+
+#botao-aplicar-filtros:hover {
+  background-color: #fafafa;
+  color: #0a0a0a;
+}
+
+#form-filtro {
+  margin: 5px;
+}

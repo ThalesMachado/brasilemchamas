@@ -446,3 +446,19 @@ select {
   background-color: #fafafa;
   color: #0a0a0a;
 }
+
+/*ORIENTACOES*/
+.subtitulo {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 7mm;
+  color: black;
+
+}
+.texto {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 5mm;
+  color: black;
+
+}

@@ -481,3 +481,16 @@ select {
 #form-filtro {
   margin: 5px;
 }
+/*ORIENTACOES*/
+.subtitulo {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 7mm;
+  color: black;
+}
+.texto {
+  font-style: inherit;
+  font-family: Russo One;
+  font-size: 5mm;
+  color: black;
+}
